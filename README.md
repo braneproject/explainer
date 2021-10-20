@@ -5,21 +5,25 @@ author: Hyeseong Kim <tim@daangn.com>
 
 # Brane Project Explanier
 
-Brane is an experimental project that aims to build secure, convenient and powerful third-party app environment based on modern web technologies. It's a set of building blocks for building "OS-grade" experiences include vendorizing an regular web app, publishing to a registry, installation, pre-loading apps, embedding widgets and smooth transition between apps and widgets
+Brane is an experimental project that aims to build secure, convenient and powerful third-party app environment based on modern web technologies. It's a set of building blocks for building **OS-grade experiences** include vendorizing an regular web app, publishing to a registry, installation, pre-loading apps, embedding widgets and smooth transition between apps and widgets
 
 Brane's idea loosely follows the [Progressive Web App](https://web.dev/progressive-web-apps/) and [MiniApp Standardization White Paper](https://www.w3.org/TR/mini-app-white-paper/)
 
 ## Motivation
 
-There has been a lot of discussion about whether "X can be implemented in on the Web". The "PWA" is well-known approach to building apps. We actually can deliver almost native experiences such as installation, offline support, payments, and push notifications that are available in modern browsers today.
+Web is very popular approch for building mobile apps today.
 
-PWAs is about single app, but as the business evolves and apps begin to scale horizontally, new patterns such as ["Micro Frontends"](https://micro-frontends.org/) and ["Mini Apps"](https://web.dev/mini-apps/) emerge.
+Still, there has been a lot of discussion about whether "X can be implemented in on the web".
 
-These patterns are partially solved by static build tools or runtimes that provide isolation. But making it an OS-grade experience on the web still seems very difficult.
+The "PWA" is a well-known approach, actually can deliver most of platform native features  such as installation, offline support, payments, and push notifications that are available in modern browsers today. However, there are many limitations to providing an well-integrated experience with the platform, which tends to be avoided.
 
-### Limits on Web-apps
+Using webviews and bridges allows app to create experiences that are well integrated with the platform. However, Android's WebViewClient and iOS's WKWebView are somewhat outdated and yet have many limitations. And the webview APIs are inconvenient to use and often conflict with platform-specific lifecycles or security model.
 
-TBD
+As the business evolves and apps begin to scale horizontally, new patterns such as ["Micro Frontends"](https://micro-frontends.org/) and ["Mini Apps"](https://web.dev/mini-apps/) emerge. And these are all for single, standalone app development and non of these can describe a usecase for running third-party code.
+
+Especially *untrusted* third-party app codes is nonsense. Making it work with an OS-grade experience on the web seems very difficult.
+
+Using trusted third-party codes may partially be able by static build tools, or runtimes that provide isolation, or platform specific APIs such as TWA(Trusted Web Activities) on Android.
 
 ## Initiative
 

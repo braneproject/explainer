@@ -33,7 +33,7 @@ Brain starts from the desire to share some sensible and working building blocks 
 - User Experience: Brane should not degrade the user experience while running isolated third-party apps. That means not only minimizing the performance overhead due to isolation, but also even if third-party apps are getting slow, they shouldn't affect the main UI interaction.
 - Vendor Netural: Brane should be able to interoperate across multiple "super-apps" without having implementations tied to a specific vendor.
 - Modern Web: Instead of designing a new system interface, Brane leverages the interfaces and security models Web already has today and constantly evolving. And gives power that users can provide themselves without being blocked to browsers implementation status.
-- Inclusive: Other public technologies are somehow exclusive despite their transparency. Brane goes beyond being transparent, keeping it open to anyone who wants to easily participate in building and improving their own platform.
+- Inclusive: Brane goes beyond being transparent, keeping it open to anyone who wants to easily participate in building and improving their own platform.
 
 ## Technical Details
 

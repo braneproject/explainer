@@ -13,19 +13,19 @@ Brane's idea loosely follows the [Progressive Web App](https://web.dev/progressi
 
 Web is very popular approch for building mobile apps today.
 
-Still, there has been a lot of discussion about whether "X can be implemented in on the web".
+Still, there has been a lot of discussion about whether X can be implemented in on the web.
 
 The [Progressive Web Apps](https://web.dev/progressive-web-apps/) is a well-known approach, actually can deliver most of platform native features  such as installation, offline support, payments, and push notifications that are available in modern browsers today. However, there are many limitations to providing an well-integrated experience with the platform, which tends to be avoided.
 
-Using webviews and bridges allows app to create experiences that are well integrated with the platform. However, Android's WebViewClient and iOS's WKWebView are somewhat outdated and yet have many limitations. And the webview APIs are inconvenient to use and often conflict with platform-specific lifecycles or security model.
+Using WebView and native bridge allows app to build experiences that are well-integrated with the platform. However, Android's WebViewClient and iOS's WKWebView are somewhat outdated and have their own limitations. WebView APIs are inconvenient to use and often conflict with platform-specific lifecycle model or security model.
 
-As the business evolves and apps begin to scale horizontally, new patterns such as ["Micro Frontends"](https://micro-frontends.org/) and ["Mini Apps"](https://web.dev/mini-apps/) emerge. And these are all for single, standalone app development and non of these can describe a usecase for running third-party code.
+As the business evolves and apps begin to scale horizontally, new patterns such as ["Micro Frontends"](https://micro-frontends.org/) and ["Mini Apps"](https://web.dev/mini-apps/) emerge. These are all for single, standalone app development and non of these can describe a usecase for running third-party codes.
 
-Using trusted third-party codes may partially be able by static build tools like [module federation](https://webpack.js.org/concepts/module-federation/) by Webpack, custom runtime with a basic isolation, or platform specific APIs such as [Trusted Web Activities](https://developer.chrome.com/docs/android/trusted-web-activity/) on Android.
+Using trusted third-party codes may partially be able by static build tools like [Module Federation](https://webpack.js.org/concepts/module-federation/) by Webpack, or platform specific APIs such as [Trusted Web Activities](https://developer.chrome.com/docs/android/trusted-web-activity/) on Android.
 
-But *untrusted* third-party app codes is nonsense. Making it work with an OS-grade experience on the web seems very difficult. If anyone want to build a creative space for third parties, such as interactive ads, plug-in systems, or own app stores, they need to consider a new approach from the scratch to security model and integration with existing platform.
+But collaborating with *untrusted* third-party apps is absurd yet. Making it work with a good experience on the web (at least it's not iframe) seems very difficult. If anyone want to build a creative space for third-parties,  interactive ads, plugin systems, or own app stores, they need to consider a unique approach from the scratch to secure and to integrate with existing platform.
 
-Brain starts from the desire to share some sensible and working building blocks for apps that want to build their own platforms today. So, Brane lifts up the responsibilities and feature limitations that are exclusive to some browser vendors today, so offers to apps the opportunity to become itself a host environment for other apps.
+Brain starts from the desire to share some working and sensible building blocks for apps that want to build their own platforms today. Brane lifts up the responsibilities and feature limitations that are exclusive a few OS/browser vendors today, so offers to apps the opportunity to become itself a host environment for other apps.
 
 ## Initiative
 

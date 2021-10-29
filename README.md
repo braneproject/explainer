@@ -37,7 +37,13 @@ Brain starts from the desire to share some working and sensible building blocks 
 
 ## Technical Details
 
-TBD
+### Isolation
+
+![Overview of Brane's isolation model](brane-isolation-overview.png)
+
+### Multi-tasking
+
+### Packaging
 
 ## Glossary
 

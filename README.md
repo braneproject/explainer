@@ -1,4 +1,4 @@
-# Brane Project Explanier
+# Brane Project Explainer
 
 Brane is an experimental project that aims to build secure, convenient third-party app environment based on web technologies.
 

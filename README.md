@@ -19,7 +19,7 @@ The [Progressive Web Apps](https://web.dev/progressive-web-apps/) is a well-know
 
 Using WebView and JavaScript bridge allows app to build experiences that are well-integrated with the platform. However, APIs (Android's WebViewClient and iOS's WKWebView) are somewhat outdated and have their own limitations. WebView APIs are inconvenient to use and often conflict with platform-specific lifecycle model or security model.
 
-As the business evolves and apps begin to scale horizontally, new patterns such as ["Micro Frontends"](https://micro-frontends.org/) and ["Mini Apps"](https://web.dev/mini-apps/) emerge. These are all for single, standalone app development and non of these can describe a usecase for running third-party codes.
+As the business evolves and apps begin to scale and to verticalized, new patterns such as ["Micro Frontends"](https://micro-frontends.org/) and ["Mini Apps"](https://web.dev/mini-apps/) emerge. These are all for single, standalone app development and non of these can describe a usecase for running third-party codes.
 
 Using trusted third-party codes may partially be able by static build tools like [Module Federation](https://webpack.js.org/concepts/module-federation/) by Webpack, or platform-specific APIs such as [Trusted Web Activities](https://developer.chrome.com/docs/android/trusted-web-activity/) by Android.
 

@@ -56,11 +56,15 @@ Brane runtime is prebuilt and shared between multiple apps and can preload share
 
 ### vs. Progressive Web Apps
 
-TBD
+[PWA] is often introduced as an alternative to native apps. However, since it relies on the browser, it is different from the actual platform-native experience, and there are restrictions on customization for the vendor app want to integrate.
+
+Brane provides opportunities for fine-grained control across the native platform, browser, vendor app (host), and user app (guest) through its sandboxed runtime, and the interface adopts the same Web standards as the PWA, maximizing interoperability.
 
 ### vs. Mini Apps
 
-TBD
+[Mini Apps], which are in the process of being standardized, also partially use the Web technologies like HTML, JavaScript, and CSS. However, it doesn't strictly flollow Web standards such as DOM and HTML.
+
+This can lead to fragmented interfaces vendors and create new barriers of entry.
 
 ### vs. Iframe
 

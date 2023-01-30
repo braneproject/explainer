@@ -25,7 +25,7 @@ Using trusted third-party codes may partially be able by static build tools like
 
 But collaborating with *untrusted* third-party apps is absurd yet. Making it work with a good experience on the web (at least it's not iframe) seems very difficult. If anyone want to build a creative space for third-parties, interactive ads, plugin systems, or [Mini Apps], they need to consider a unique approach from the scratch to secure and to integrate with existing platform.
 
-Brain starts from the desire to share some working and sensible building blocks for apps that want to build their own platforms today. Brane lifts up the responsibilities and feature limitations that are exclusive a few OS/browser vendors today, so offers to apps the opportunity to become itself a host environment for other apps.
+The Brane Project starts from the desire to share some working and sensible building blocks for apps that want to build their own platforms today. Brane lifts up the responsibilities and feature limitations that are exclusive a few OS/browser vendors today, so offers to apps the opportunity to become itself a host environment for other apps.
 
 ## Initiative
 

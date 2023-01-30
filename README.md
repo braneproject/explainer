@@ -19,11 +19,11 @@ The [Progressive Web Apps](https://web.dev/progressive-web-apps/) is a well-know
 
 Using WebView and JavaScript bridge allows app to build experiences that are well-integrated with the platform. However, APIs (Android's WebViewClient and iOS's WKWebView) are somewhat outdated and have their own limitations. WebView APIs are inconvenient to use and often conflict with platform-specific lifecycle model or security model.
 
-As the business evolves and apps begin to scale and to verticalized, new patterns such as ["Micro Frontends"](https://micro-frontends.org/) and ["Mini Apps"](https://web.dev/mini-apps/) emerge. These are all for single, standalone app development and non of these can describe a usecase for running third-party codes.
+As the business evolves and apps begin to scale and to verticalized, new patterns such as ["Micro Frontends"](https://micro-frontends.org/) emerge. These are all for single, standalone app development and non of these can describe a usecase for running third-party codes.
 
 Using trusted third-party codes may partially be able by static build tools like [Module Federation](https://webpack.js.org/concepts/module-federation/) by Webpack, or platform-specific APIs such as [Trusted Web Activities](https://developer.chrome.com/docs/android/trusted-web-activity/) by Android.
 
-But collaborating with *untrusted* third-party apps is absurd yet. Making it work with a good experience on the web (at least it's not iframe) seems very difficult. If anyone want to build a creative space for third-parties, interactive ads, plugin systems, or own app stores, they need to consider a unique approach from the scratch to secure and to integrate with existing platform.
+But collaborating with *untrusted* third-party apps is absurd yet. Making it work with a good experience on the web (at least it's not iframe) seems very difficult. If anyone want to build a creative space for third-parties, interactive ads, plugin systems, or [Mini Apps], they need to consider a unique approach from the scratch to secure and to integrate with existing platform.
 
 Brain starts from the desire to share some working and sensible building blocks for apps that want to build their own platforms today. Brane lifts up the responsibilities and feature limitations that are exclusive a few OS/browser vendors today, so offers to apps the opportunity to become itself a host environment for other apps.
 

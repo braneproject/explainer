@@ -71,7 +71,7 @@ This can lead to fragmented interfaces vendors and create new barriers of entry.
 Iframe is a standard way to embed third-party content into the DOM. There are several issues in iframes that make them unsuitable for displaying app content.
 
 1. Accessibility; content loaded into an iframe is not displayed on screen readers.
-2. Opt-out sandboxing; the `sandbox="allow-scripts"` attribute that required to run third-party script disables isolation of existing JavaScript execution context.
+2. Capabilities; the `sandbox` attribute makes content's origin to be `null` so disables browser features that requires origin policy.
 
 [PWA]: https://web.dev/progressive-web-apps/
 [Mini Apps]: https://web.dev/mini-apps/

@@ -36,15 +36,13 @@ The Brane Project starts from the desire to share some working and sensible buil
 
 ## Architecture
 
-### Isolated DOM
+### Web Sandbox
 
-Brane apps operate on a different security model than typical web apps. It's the [Web Worker].
+Brane apps operate on a different security model than typical web apps. It's the cross-origin iframe and [Web Workers].
 
-A Brane host spawns multiple Web Workers to manage apps. A web worker isolates a app instance and has a port to communicate with the host environment. Since the DOM does not exist in the JavaScript execution context spawned in the worker, it has to be implemented separately. This is similar to the AMP's [WorkerDOM](https://github.com/ampproject/worker-dom) project. Brane's implementation goes further here on a shared memory basis rather than messaging basis. This unlocks cooperative scheduling so allows all web interfaces including blocking ones like `getClientBoundingRect()` to be properly implemented.
+A Brane host spawns multiple frames with worker to manage apps. A web worker isolates a app instance and has a port to communicate with the host environment. Since the many of browser APIs including DOM does not exist in the JavaScript context spawned in the worker, it has to be implemented separately. This is similar to the AMP's [WorkerDOM](https://github.com/ampproject/worker-dom) project. Brane's implementation goes further here on a shared memory basis rather than messaging basis. This unlocks cooperative scheduling so allows all web interfaces including blocking ones like `getClientBoundingRect()` to be properly implemented.
 
-*TBD: RFC for Isolated DOM*
-
-Additional iframe layer may be required to [mitigate potential threats from the Specter attack](https://www.w3.org/TR/post-spectre-webdev/) in the same process.
+See more detail on [RFC](https://github.com/braneproject/rfcs/pull/1)
 
 ### Single-page, Multi-apps
 
@@ -75,4 +73,4 @@ Iframe is a standard way to embed third-party content into the DOM. There are se
 
 [PWA]: https://web.dev/progressive-web-apps/
 [Mini Apps]: https://web.dev/mini-apps/
-[Web Worker]: https://html.spec.whatwg.org/multipage/#workers
+[Web Workers]: https://html.spec.whatwg.org/multipage/#workers
